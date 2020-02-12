@@ -269,7 +269,7 @@ void lge_uart_console_set_ready(unsigned int ready)
 
 #endif /* CONFIG_LGE_EARJACK_DEBUGGER */
 
-#ifdef CONFIG_LGE_USB_FACTORY
+//#ifdef CONFIG_LGE_USB_FACTORY
 /* get boot mode information from cmdline.
  * If any boot mode is not specified,
  * boot mode is normal type.
@@ -384,7 +384,7 @@ static int __init lge_android_usb_devices_init(void)
 	return platform_device_register(&lge_android_usb_device);
 }
 arch_initcall(lge_android_usb_devices_init);
-#endif
+//#endif
 
 #ifdef CONFIG_LGE_USB_DIAG_LOCK
 static struct platform_device lg_diag_cmd_device = {
